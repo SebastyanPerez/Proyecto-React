@@ -68,7 +68,7 @@ react-icons
 
 Añadir un reproductor de música.
 
-Conectar con una API de música (Spotify API).
+Conectar con una API de música (:Spotify API).
 
 Agregar animaciones con Framer Motion.
 
