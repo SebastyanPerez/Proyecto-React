@@ -1,5 +1,6 @@
 import React from 'react';
 import './css/Genres.css';
+import { FaMusic } from 'react-icons/fa';
 
 const Genres = () => {
   const genres = [
@@ -22,7 +23,10 @@ const Genres = () => {
             className="genre-card"
             style={{ background: genre.color }}
           >
-            <h2 className="genre-name">{genre.name}</h2>
+            <div className="genre-overlay">
+              <FaMusic className="genre-icon" />
+              <h2 className="genre-name">{genre.name}</h2>
+            </div>
           </div>
         ))}
       </div>
