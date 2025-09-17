@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { NAV_ITEMS, USER_MENU } from '../../utils/constants';
 import './css/Siderbar.css';
 
@@ -15,10 +16,10 @@ const Sidebar = ({ isOpen, onClose }) => {
           <ul>
             {NAV_ITEMS.map(item => (
               <li key={item.id}>
-                <a href={item.path} className="nav-item">
+                <NavLink to={item.path} className={({ isActive }) => `nav-item${isActive ? ' active' : ''}`} onClick={onClose}>
                   <i className={`fas fa-${item.icon}`}></i>
                   <span>{item.name}</span>
-                </a>
+                </NavLink>
               </li>
             ))}
           </ul>
@@ -29,10 +30,17 @@ const Sidebar = ({ isOpen, onClose }) => {
           <ul>
             {USER_MENU.map(item => (
               <li key={item.id}>
-                <a href="#" className="nav-item">
-                  <i className={`fas fa-${item.icon}`}></i>
-                  <span>{item.name}</span>
-                </a>
+                {item.path ? (
+                  <NavLink to={item.path} className={({ isActive }) => `nav-item${isActive ? ' active' : ''}`} onClick={onClose}>
+                    <i className={`fas fa-${item.icon}`}></i>
+                    <span>{item.name}</span>
+                  </NavLink>
+                ) : (
+                  <button type="button" className="nav-item" onClick={() => { /* acción local */ }}>
+                    <i className={`fas fa-${item.icon}`}></i>
+                    <span>{item.name}</span>
+                  </button>
+                )}
               </li>
             ))}
           </ul>
