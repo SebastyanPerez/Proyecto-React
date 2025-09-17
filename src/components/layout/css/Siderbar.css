@@ -80,3 +80,29 @@
 .overlay.active {
   display: block;
 }
+
+/* Responsive behaviour: hide sidebar on small screens and make it slide */
+@media (max-width: 900px) {
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 260px;
+    transform: translateX(-110%);
+    transition: transform 220ms cubic-bezier(.2,.8,.2,1);
+    z-index: 1000;
+    height: 100vh;
+    box-shadow: 4px 0 30px rgba(0,0,0,0.3);
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  /* show overlay when sidebar opened */
+  .overlay.active {
+    display: block;
+    z-index: 900;
+  }
+}
