@@ -1,7 +1,7 @@
 import React from 'react';
-import Card from '../common/Card/Card';
+import Card from '../common/Card';
 import { mockPlaylists } from '../../utils/mockData';
-import './RecommendedSection.css';
+import './css/RecommendedSection.css';
 
 const RecommendedSection = () => {
   return (

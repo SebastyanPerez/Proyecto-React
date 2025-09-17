@@ -1,6 +1,6 @@
 import React from 'react';
 import { mockArtists } from '../../utils/mockData';
-import './ArtistsSection.css';
+import './css/ArtistsSection.css';
 
 const ArtistsSection = () => {
   return (

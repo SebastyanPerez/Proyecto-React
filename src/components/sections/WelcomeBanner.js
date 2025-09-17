@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from '../common/Button/Button';
-import './WelcomeBanner.css';
+import Button from '../common/Button';
+import './css/WelcomeBanner.css';
 
 const WelcomeBanner = () => {
   return (
