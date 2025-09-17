@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+🎵 Music Web – Página Estática en React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este es un proyecto de una página web estática de música, desarrollado en React.
+El objetivo es mostrar un diseño atractivo y moderno, con el uso de react-icons para mejorar la experiencia visual.
 
-## Available Scripts
+🚀 Tecnologías utilizadas
 
-In the project directory, you can run:
+React
+ – Biblioteca para construir la interfaz.
 
-### `npm start`
+React Icons
+ – Paquete de íconos personalizables.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+HTML5, CSS3 y JavaScript (ES6+).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+📦 Instalación y ejecución
 
-### `npm test`
+Clonar el repositorio:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+git clone https://github.com/usuario/nombre-del-proyecto.git
+cd nombre-del-proyecto
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Instalar dependencias:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+Iniciar el servidor de desarrollo:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+npm start
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Abrir en el navegador:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+http://localhost:3000
 
-## Learn More
+📁 Estructura del proyecto
+my-app/
+├── public/          # Archivos estáticos (index.html, favicon, etc.)
+├── src/
+│   ├── components/  # Componentes reutilizables (/common ,/layout y secctions)
+│   ├── pages/       # Páginas de la aplicación
+│   ├── assets/      # Imágenes, iconos y recursos multimedia
+│   ├── App.js       # Componente principal
+│   ├── index.js     # Punto de entrada
+│   └── styles/      # Hojas de estilo CSS
+├── package.json     # Configuración y dependencias
+└── README.md        # Documentación
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+🎨 Características
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Interfaz limpia y moderna inspirada en la música.
 
-### Code Splitting
+Uso de íconos para mejorar la experiencia visual.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Totalmente responsiva (adaptada para móvil, tablet y desktop).
 
-### Analyzing the Bundle Size
+🔧 Dependencias principales
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+react
 
-### Making a Progressive Web App
+react-dom
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+react-icons
 
-### Advanced Configuration
+📌 Próximas mejoras
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Añadir un reproductor de música.
 
-### Deployment
+Conectar con una API de música (Spotify API).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Agregar animaciones con Framer Motion.
 
-### `npm run build` fails to minify
+📄 Licencia
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este proyecto está bajo la licencia MIT. Puedes usarlo y modificarlo libremente.
